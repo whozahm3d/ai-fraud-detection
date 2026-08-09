@@ -1,0 +1,8 @@
+[server]
+runOnSave = false
+fileWatcherType = "none"
+
+# Optional: tune server host/port for local dev
+# headless = true
+# enableCORS = false
+# (Only one [server] section allowed.)
