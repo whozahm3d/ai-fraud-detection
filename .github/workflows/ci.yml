@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  install-and-lint:
+    name: Install Dependencies & Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: "pip"
+
+      - name: Install runtime dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install dev dependencies
+        run: |
+          pip install -r requirements-dev.txt
+
+      - name: Lint app.py and rag_module.py
+        run: |
+          # ─────────────────────────────────────────────────────────────────
+          # NOTE: scripts/ is intentionally excluded from linting.
+          # The files in scripts/ are modular pipeline components extracted
+          # from Jupyter notebooks. They depend on shared notebook state
+          # (variables like df, pd, np, plt defined across multiple cells)
+          # and are not designed to be run as standalone Python files.
+          # Two files (libraries_loaded.py, save_cleaned_dataset.py) also
+          # contain Jupyter magic commands and raw output — not valid Python.
+          # Only the actual standalone application files are linted here.
+          # ─────────────────────────────────────────────────────────────────
+
+          # Hard fail on syntax errors or critical issues
+          flake8 app.py rag_module.py \
+            --count \
+            --select=E9,F63,F7,F82 \
+            --show-source \
+            --statistics
+
+          # Soft warn on style issues (non-blocking, exit-zero)
+          flake8 app.py rag_module.py \
+            --count \
+            --max-line-length=120 \
+            --exit-zero \
+            --statistics
+
+      - name: Verify deployment artefacts exist
+        run: |
+          python - <<'EOF'
+          import os, sys
+          required = [
+              "outputs/deployment/model.pkl",
+              "outputs/deployment/scaler.pkl",
+              "outputs/deployment/model_meta.json",
+              "outputs/deployment/feature_names.json",
+          ]
+          missing = [f for f in required if not os.path.exists(f)]
+          if missing:
+              print("❌ Missing deployment artefacts:")
+              for f in missing: print(f"   {f}")
+              sys.exit(1)
+          print("✅ All deployment artefacts present.")
+          EOF
