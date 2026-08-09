@@ -1,0 +1,16 @@
+Model,Parameter,Values Tested,Final,Justification
+Logistic Regression,C,"0.01, 0.1, 1.0",1.0,Default regularization — sufficient for linear baseline
+Logistic Regression,solver,"lbfgs, saga",saga,saga supports n_jobs=-1 — faster on large dataset
+Logistic Regression,class_weight,"balanced, None",None,Removed — ImbPipeline SMOTE handles imbalance; balanced caused precision collapse
+Random Forest,max_depth,"7, 10, 12",12,Depth 7 too shallow — model predicted all-negative on fraud class
+Random Forest,n_estimators,"50, 100, 30",30,Reduced for speed — 30 trees sufficient on 6.6M rows
+Random Forest,max_samples,"0.4, 0.5, 0.6",0.5,0.4 undersampled fraud cases — KeyError on classification report
+Random Forest,class_weight,"balanced_subsample, None",None,Removed — SMOTE inside ImbPipeline handles imbalance
+XGBoost,n_estimators,"100, 200, 300",300,More trees improve generalization on tabular fraud data
+XGBoost,learning_rate,"0.1, 0.05, 0.01",0.05,Lower LR with 300 trees — better generalization vs 0.1
+XGBoost,max_depth,"4, 6, 8",6,Standard depth for fraud tabular data — 8 overfits
+XGBoost,scale_pos_weight,"auto-computed, None",None,Removed — SMOTE handles imbalance; both caused over-prediction
+Neural Network,hidden_layer_sizes,"(64,32), (32,16)","(32,16)","12 features don't need 64 neurons — same accuracy, faster"
+Neural Network,batch_size,"1024, 512, 256",256,1024 caused NaN in K-Fold — 256 stable for adam solver
+Neural Network,alpha,"0.01, 0.03, 0.1",0.03,Approximates dropout=0.3 via L2 regularization
+Neural Network,early_stopping,"True, False",False,True caused NaN inside ImbPipeline — internal val split had zero fraud

@@ -1,0 +1,14 @@
+Transaction  : TXN-MEDIUM-001
+Fraud Prob   : 73.0%
+Risk Tier    : HIGH
+Grounding    : 0.00
+Latency      : 3.6s
+
+ERROR: Cohere rate limit reached. Wait and retry.
+
+SOURCES:
+• AML/CFT Regulations | AML/CFT/CPF | Page 29 | Section: REGULATION – 12 NEW TECHNOLOGIES Review of Products and Services including
+• AML/CFT Regulations | AML/CFT/CPF | Page 27 | Section: REGULATION – 11 WIRE TRANSFERS/ FUND TRANSFERS 1) The requirement under thi
+• AML/CFT Regulations | AML/CFT/CPF | Page 18 | Section: General
+• AML/CFT Regulations | AML/CFT/CPF | Page 2 | Section: General
+• AML/CFT Regulations | AML/CFT/CPF | Page 33 | Section: General

@@ -1,0 +1,54 @@
+[
+    {
+        "Model": "XGBoost",
+        "CV Precision": "0.905 \u00b1 0.035",
+        "CV Recall": "1.000 \u00b1 0.000",
+        "CV F1": "0.949 \u00b1 0.020",
+        "CV AUC-ROC": "1.000 \u00b1 0.000",
+        "CV Avg Prec": "0.985 \u00b1 0.004",
+        "Test Precision": 0.3981,
+        "Test Recall": 0.9976,
+        "Test F1": 0.5691,
+        "Test AUC-ROC": 0.9995,
+        "Test Avg Prec": 0.9358
+    },
+    {
+        "Model": "Random Forest",
+        "CV Precision": "0.553 \u00b1 0.009",
+        "CV Recall": "0.995 \u00b1 0.001",
+        "CV F1": "0.711 \u00b1 0.007",
+        "CV AUC-ROC": "0.999 \u00b1 0.000",
+        "CV Avg Prec": "0.934 \u00b1 0.002",
+        "Test Precision": 0.1035,
+        "Test Recall": 0.9976,
+        "Test F1": 0.1875,
+        "Test AUC-ROC": 0.9995,
+        "Test Avg Prec": 0.887
+    },
+    {
+        "Model": "Neural Network",
+        "CV Precision": "0.667 \u00b1 0.089",
+        "CV Recall": "0.990 \u00b1 0.005",
+        "CV F1": "0.793 \u00b1 0.061",
+        "CV AUC-ROC": "0.999 \u00b1 0.000",
+        "CV Avg Prec": "0.969 \u00b1 0.003",
+        "Test Precision": 0.1437,
+        "Test Recall": 0.9732,
+        "Test F1": 0.2505,
+        "Test AUC-ROC": 0.9983,
+        "Test Avg Prec": 0.7081
+    },
+    {
+        "Model": "Logistic Regression",
+        "CV Precision": "0.142 \u00b1 0.002",
+        "CV Recall": "0.997 \u00b1 0.001",
+        "CV F1": "0.249 \u00b1 0.003",
+        "CV AUC-ROC": "0.977 \u00b1 0.001",
+        "CV Avg Prec": "0.337 \u00b1 0.006",
+        "Test Precision": 0.0217,
+        "Test Recall": 0.986,
+        "Test F1": 0.0425,
+        "Test AUC-ROC": 0.9946,
+        "Test Avg Prec": 0.5567
+    }
+]

@@ -1,0 +1,11 @@
+q_id,query,precision_at_5,term_hit_rate,has_expected_doc,n_retrieved
+1,What are the STR reporting requirements for suspicious trans...,0.8,1.0,True,5
+2,Customer Due Diligence obligations in branchless banking...,1.0,1.0,True,4
+3,Enhanced Due Diligence high risk customers...,0.5,0.667,True,4
+4,Currency transaction reporting CTR thresholds...,1.0,1.0,True,4
+5,Wire transfer fund transfer regulations SBP AML...,1.0,1.0,True,3
+6,Risk based approach AML CFT internal risk assessment IRAR...,1.0,1.0,True,4
+7,Branchless banking account types transaction limits...,1.0,1.0,True,5
+8,Record keeping obligations financial institutions SBP...,1.0,0.667,True,5
+9,Politically exposed persons PEP enhanced monitoring...,1.0,1.0,True,5
+10,New technologies risk management payment service providers...,0.25,0.667,True,4

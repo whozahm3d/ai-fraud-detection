@@ -1,0 +1,5 @@
+transaction_id,fraud_prob,risk_tier,grounding_score,citation_count,sources_count,hallucination,no_evidence,latency_s
+TXN-CRITICAL-001,0.97,CRITICAL,0.0,0,5,False,False,6.45
+TXN-HIGH-001,0.94,CRITICAL,0.0,0,5,False,False,4.67
+TXN-HIGH-002,0.88,CRITICAL,0.0,0,5,False,False,3.4
+TXN-MEDIUM-001,0.73,HIGH,0.0,0,5,False,False,3.64

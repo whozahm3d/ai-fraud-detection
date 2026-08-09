@@ -1,0 +1,22 @@
+{
+    "model": "neural_network",
+    "cv_precision_mean": 0.6670064170179856,
+    "cv_precision_std": 0.08910236771914588,
+    "cv_recall_mean": 0.9900968817476409,
+    "cv_recall_std": 0.005220411165941099,
+    "cv_f1_mean": 0.7934188201073958,
+    "cv_f1_std": 0.060803864719423624,
+    "cv_auc_mean": 0.9993592326444749,
+    "cv_auc_std": 0.0001150263322456413,
+    "cv_average_precision_mean": 0.9694517716602912,
+    "cv_average_precision_std": 0.002970159869247075,
+    "cv_train_f1_mean": 0.7927289250046886,
+    "cv_train_auc_mean": 0.9994970071756887,
+    "model_name": "neural_network",
+    "test_accuracy": 0.9924802989963254,
+    "test_precision": 0.14374325782092773,
+    "test_recall": 0.9732197200243458,
+    "test_f1": 0.25048954335395945,
+    "test_auc_roc": 0.9983282835705342,
+    "test_avg_prec": 0.7080888321044619
+}

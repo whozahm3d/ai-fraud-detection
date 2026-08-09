@@ -1,0 +1,23 @@
+{
+    "model_type": "XGBoost",
+    "features": [
+        "step",
+        "amount",
+        "oldbalanceOrg",
+        "newbalanceOrig",
+        "oldbalanceDest",
+        "newbalanceDest",
+        "balanceDiff",
+        "amount_ratio",
+        "type_CASH_OUT",
+        "type_DEBIT",
+        "type_PAYMENT",
+        "type_TRANSFER"
+    ],
+    "n_features": 12,
+    "test_f1": 0.5691,
+    "test_auc": 0.9995,
+    "test_recall": 0.9976,
+    "test_precision": 0.3981,
+    "decision_threshold": 0.5
+}

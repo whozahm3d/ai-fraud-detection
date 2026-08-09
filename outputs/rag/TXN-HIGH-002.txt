@@ -1,0 +1,14 @@
+Transaction  : TXN-HIGH-002
+Fraud Prob   : 88.0%
+Risk Tier    : CRITICAL
+Grounding    : 0.00
+Latency      : 3.4s
+
+ERROR: Cohere rate limit reached. Wait and retry.
+
+SOURCES:
+• AML/CFT Regulations | AML/CFT/CPF | Page 27 | Section: REGULATION – 11 WIRE TRANSFERS/ FUND TRANSFERS 1) The requirement under thi
+• AML/CFT Regulations | AML/CFT/CPF | Page 2 | Section: General
+• AML/CFT Regulations | AML/CFT/CPF | Page 5 | Section: General
+• AML/CFT Regulations | AML/CFT/CPF | Page 18 | Section: General
+• AML/CFT Regulations | AML/CFT/CPF | Page 12 | Section: REGULATION – 1 RISK BASED APPROACH TO AML/ CFT 1) SBP REs shall comply wit
