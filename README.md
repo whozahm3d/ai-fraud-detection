@@ -23,7 +23,7 @@
 
 <br>
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)]([NEW_DEPLOYMENT_URL])
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://ai-fraud-detection-axulmvtaarwsta4kweplbr.streamlit.app/)
 &nbsp;&nbsp;
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/whozahm3d/ai-fraud-detection)
 
