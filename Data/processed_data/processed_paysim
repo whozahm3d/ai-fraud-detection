@@ -1,0 +1,44 @@
+The dataset is very huge and unable to add via a complete csv file.
+Below is the preview of the top 5 rows of the processed_data.csv after cleaning and preprocessing.
+
+   step        amount     nameOrig  oldbalanceOrg  newbalanceOrig  \
+0     1   9839.639648  C1231006815       170136.0   160296.359375   
+1     1   1864.280029  C1666544295        21249.0    19384.720703   
+2     1    181.000000  C1305486145          181.0        0.000000   
+3     1    181.000000   C840083671          181.0        0.000000   
+4     1  11668.139648  C2048537720        41554.0    29885.859375   
+
+      nameDest  oldbalanceDest  newbalanceDest  isFraud  isFlaggedFraud  \
+0  M1979787155             0.0             0.0        0               0   
+1  M2044282225             0.0             0.0        0               0   
+2   C553264065             0.0             0.0        1               0   
+3    C38997010         21182.0             0.0        1               0   
+4  M1230701703             0.0             0.0        0               0   
+
+    balanceDiff  amount_ratio  type_CASH_OUT  type_DEBIT  type_PAYMENT  \
+0   9839.640625      0.057834          False       False          True   
+1   1864.279297      0.087731          False       False          True   
+2    181.000000      0.994505          False       False         False   
+3    181.000000      0.994505           True       False         False   
+4  11668.140625      0.280788          False       False          True   
+
+   type_TRANSFER  
+0          False  
+1          False  
+2           True  
+3          False  
+4          False  
+
+# Processed Data
+
+This folder stores processed and intermediate datasets generated during preprocessing, feature engineering, balancing, and model preparation steps.
+
+Files are not included in the repository to reduce project size and avoid redundant storage.
+
+Generate the processed files by running the preprocessing and training pipeline notebooks/deliverable_1.ipynb and in folder script/ before model training or evaluation.
+
+# Data
+
+Dataset CSV files are not included in this repository because of size limitations.
+
+Before running training notebooks or scripts, download the PaySim dataset and place the required CSV files inside this folder.

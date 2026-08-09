@@ -1,0 +1,5 @@
+# train_final_smote.csv
+
+Final balanced training dataset generated after applying SMOTE to handle class imbalance.
+
+This file is produced during the model preparation pipeline.

@@ -1,0 +1,5 @@
+# train_after_simulation.csv
+
+Training dataset generated after fraud simulation and synthetic transaction generation steps.
+
+This file is created automatically during the data augmentation pipeline.

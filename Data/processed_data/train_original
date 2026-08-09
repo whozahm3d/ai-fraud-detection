@@ -1,0 +1,5 @@
+# train_original.csv
+
+Original training split generated from the raw PaySim dataset during preprocessing.
+
+This file is created automatically by the preprocessing pipeline and is not included in the repository.
